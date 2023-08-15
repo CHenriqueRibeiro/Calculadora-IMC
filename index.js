@@ -21,7 +21,7 @@ function calcular() {
 
     if (imc < 18.5) {
         console.log(display)
-        console.log($('li.nomepessoa').text(`Nome: ${name}`)).css('color', 'blue')
+        console.log($('li.nomepessoa').text(`Nome: ${name}`))
         console.log($('li.idadepessoa').text(`Idade: ${idade} anos`))
         console.log($('li.generopessoa').text(`Genero: ${genero}`))
         console.log($('li.pesopessoa').text(`Peso: ${peso} kg`))
