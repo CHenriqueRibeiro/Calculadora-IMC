@@ -132,7 +132,12 @@ label {
 }
 
 .resultado ul {
-    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+
     margin-left: -30px;
     list-style: none;
 }
@@ -146,10 +151,36 @@ label {
     position: relative;
     bottom: 22.4rem;
     margin: auto;
+
     border: 1px double #000000;
     width: 80vw;
     height: 8vh;
 }
+
+#pesodousuario::placeholder {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    color: #000000;
+    opacity: 0.4;
+}
+
+#alturadousuario::placeholder {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 100;
+    color: #000000;
+    opacity: 0.4;
+}
+
+#pesodousuario,
+#alturadousuario,
+#nomedousuario,
+#idadedousuario {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
 
 #parteinferior {
     display: none;
@@ -157,6 +188,18 @@ label {
 
 .parteinferior-on {
     display: block !important;
+}
+
+.nomepessoa,
+.idadepessoa,
+.generopessoa,
+.pesopessoa,
+.alturapessoa,
+.valorimc,
+.classificacaoimc {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+
 }
 
 @media (min-width:320px)and (max-width: 480px) {
@@ -180,12 +223,11 @@ label {
         background-color: antiquewhite;
     }
 
-    #parteinferior {
-        display: none;
-
+    .resultado ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
     }
 
-    .parteinferior-on {
-        display: block !important;
-    }
 }
