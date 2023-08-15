@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d79d1;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    height: 25vh;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.areaform {
+    display: flex;
+    position: relative;
+    bottom: 7.4rem;
+    margin: auto;
+    border: 6px double #000000;
+    width: 90vw;
+    height: 88vh;
+    background-color: antiquewhite;
+
+}
+
+.dadospessoais {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px auto;
+}
+
+legend {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+.divform {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.dadosform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    border: #000000 1px solid;
+    gap: 10px;
+}
+
+#genero {
+    margin-top: 5px;
+
+}
+
+#btncalculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    margin: 10px auto;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    background-color: #0d79d1;
+    color: #FFFFFF;
+    border-color: #0d79d1;
+
+    border-radius: 10px;
+}
+
+#btncalculo:hover {
+    background-color: #ffffff;
+    color: #0d79d1;
+    border-color: #0d79d1;
+}
+
+.txtResultado {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 370px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.txtimc {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    bottom: 365px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+
+.resultado {
+    display: flex;
+    position: relative;
+    bottom: 23rem;
+    margin: auto;
+    border: 1px double #000000;
+    width: 80vw;
+    height: 15vh;
+}
+
+.resultado ul {
+    margin-top: 10px;
+    margin-left: -30px;
+    list-style: none;
+}
+
+.resultadoimc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 10px;
+    position: relative;
+    bottom: 22.4rem;
+    margin: auto;
+    border: 1px double #000000;
+    width: 80vw;
+    height: 8vh;
+}
+
+#parteinferior {
+    display: none;
+}
+
+#parteinferior-on {
+    display: block;
+}

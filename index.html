@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora para Nutricionista</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Calculadora de Imc</h1>
+    </header>
+    <main>
+        <section>
+            <div class="areaform">
+                <div class="divform">
+                    <form id="formulario " autocomplete="off">
+                        <fieldset class="dadosform">
+                            <legend>Dados Pessoais</legend>
+                            <label> Nome:</label><input type="text" name="nomedousuario" id="nomedousuario">
+                            <label>Idade:</label><input type="number" name="idadedousuario" id="idadedousuario">
+                            <div class="sexo">
+                                <label>Genero: </label>
+                                <input type="radio" id="genero" name="genero" value="Masculino" />
+                                <label>Masculino</label>
+                                <input type="radio" id="genero" name="genero" value="Feminino" />
+                                <label>Feminino</label>
+                            </div>
+                            <label>Peso(Kg):</label><input type="number" name="pesodousuario" id="pesodousuario"
+                                placeholder="seu peso, Ex: 100" maxlength="4" minlength="4">
+                            <label>Altura(CM):</label><input type="number" name="alturadousuario" id="alturadousuario"
+                                placeholder="sua altura, Ex: 1,80" maxlength="4" minlength="4">
+                            <button id="btncalculo" type="button">Calcular</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="parteinferior">
+            <div class="txtResultado">
+                <h3>Resultado</h3>
+            </div>
+            <div class="resultado">
+                <ul>
+
+
+                    <li class="nomepessoa"></li>
+                    <li class="idadepessoa"></li>
+                    <li class="generopessoa"></li>
+                    <li class="pesopessoa"></li>
+                    <li class="alturapessoa"></li>
+
+                </ul>
+            </div>
+
+            <div class="txtimc">
+                <h3>IMC</h3>
+            </div>
+
+            <div class="resultadoimc">
+                <p class="valorimc"></p>
+                <p class="classificacaoimc"></p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
