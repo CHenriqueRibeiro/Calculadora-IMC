@@ -26,15 +26,15 @@
                             <label>Idade:</label><input type="number" name="idadedousuario" id="idadedousuario">
                             <div class="sexo">
                                 <label>Genero: </label>
-                                <input type="radio" id="genero" name="genero" value="Masculino" />
+                                <input type="radio" name="genero" value="Masculino" checked />
                                 <label>Masculino</label>
-                                <input type="radio" id="genero" name="genero" value="Feminino" />
+                                <input type="radio" name="genero" value="Feminino" />
                                 <label>Feminino</label>
                             </div>
-                            <label>Peso(Kg):</label><input type="number" name="pesodousuario" id="pesodousuario"
-                                placeholder="seu peso, Ex: 100" maxlength="4" minlength="4">
-                            <label>Altura(CM):</label><input type="number" name="alturadousuario" id="alturadousuario"
-                                placeholder="sua altura, Ex: 1,80" maxlength="4" minlength="4">
+                            <label>Peso(Kg):</label><input type="text" name="pesodousuario" id="pesodousuario"
+                                placeholder="seu peso, Ex: 100">
+                            <label>Altura(CM):</label><input type="text" name="alturadousuario" id="alturadousuario"
+                                placeholder="sua altura, Ex: 1,80">
                             <button id="btncalculo" type="button">Calcular</button>
                         </fieldset>
                     </form>
@@ -42,7 +42,7 @@
             </div>
         </section>
 
-        <section id="parteinferior">
+        <section id="parteinferior" class="">
             <div class="txtResultado">
                 <h3>Resultado</h3>
             </div>
@@ -69,6 +69,9 @@
             </div>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/mascara/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
     <script src="index.js"></script>
 </body>
 
