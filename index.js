@@ -1,5 +1,4 @@
 $(document).ready(() => {
-    // $('#nomedousuario').mask('SSSSSSSSS')
     $('#idadedousuario').mask('99')
     $('#pesodousuario').mask('999')
     $('#alturadousuario').mask("0,00");
