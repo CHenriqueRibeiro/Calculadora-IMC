@@ -159,14 +159,14 @@ label {
 
 #pesodousuario::placeholder {
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     color: #000000;
     opacity: 0.4;
 }
 
 #alturadousuario::placeholder {
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     color: #000000;
     opacity: 0.4;
 }
